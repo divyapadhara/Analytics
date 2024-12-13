@@ -1,0 +1,69 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+	body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/072/400/original/red-grunge-texture-banner-vector.jpg");
+  background-color: #cccccc;
+}
+  </style>
+</head>
+   <body>
+      <title>Margin Prediction </title>
+	  
+	  <div class="container">
+		<div style="text-align:center; align:center; padding:auto;">
+			<h1  style="color:#cccccc">Margin Prediction</h1>
+			<br>
+		<div class="row" style="align:center; padding:auto;">	
+		  <form action="http://localhost:9000/" method="POST"  style="text-align:center; align:center; padding:auto;">
+		  	<div class="col-sm-20" style="text-align:center; align:center;">
+			 <div class="form-group  purple-border" style="text-align:center; align:center;">
+				  <label for="comment" style="color:#cccccc"><h6>Cost_Price</h6></label>
+				  <textarea class="form-control" rows="1" id="query1" name="query1" rows="1" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Market_Trend</h6></label>
+				  <textarea class="form-control" rows="1" id="query2" name="query2" rows="1" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Historical_Sales</h6></label>
+				  <textarea class="form-control" rows="1" id="query3" name="query3" rows="1" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Current_Stock</h6></label>
+				  <textarea class="form-control" rows="1" id="query4" name="query4" rows="1" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Price</h6></label>
+				  <textarea class="form-control" rows="1" id="query5" name="query5" rows="1" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Category</h6></label>
+				  <textarea class="form-control" rows="1" id="query6" name="query6" rows="1" cols="5" autofocus>{{query6}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment" style="color:#cccccc"><h6>Season</h6></label>
+				  <textarea class="form-control" rows="1" id="query7" name="query7" rows="1" cols="5" autofocus>{{query7}}</textarea>
+			</div>
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit" >SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<h3 style="color:#cccccc">Margin is % </h3>
+			<textarea class="form-control" rows="1" id="comment" name="query8" rows="1" cols="7" autofocus>{{output}}</textarea>
+			<br>
+		</div>
+		</div>
+	</div>	
+</div>	
+   </body>
+</html>
